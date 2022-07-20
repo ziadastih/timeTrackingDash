@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+:root {
+  /* font family  */
+  --rubik: "Rubik", sans-serif;
+
+  --Blue: hsl(246, 80%, 60%);
+
+  --Lightredwork: hsl(15, 100%, 70%);
+  --Softblueplay: hsl(195, 74%, 62%);
+  --Lightredstudy: hsl(348, 100%, 68%);
+  --Limegreenexercise: hsl(145, 58%, 55%);
+  --Violetsocial: hsl(264, 64%, 52%);
+  --Softorangeselfcare: hsl(43, 84%, 65%);
+
+  --Verydarkblue: hsl(226, 43%, 10%);
+  --Darkblue: hsl(235, 46%, 20%);
+  --Desaturatedblue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+}
+
+body {
+  background-color: var(--Verydarkblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  margin-top: 20px;
+  max-height: 150vh;
+  overflow: hidden;
+  gap: 0.5rem;
+}
+.grid {
+  width: 200px;
+  height: 100px;
+}
+
+/* =============start of profile========== */
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  background-color: var(--Darkblue);
+
+  border-radius: 10px;
+}
+/* =========profile========== */
+.profile-info {
+  background-color: var(--Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  gap: 1rem;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+/* ======profile img========= */
+.profile-info img {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.text p {
+  font-family: var(--rubik);
+  font-weight: 300;
+  font-size: 10px;
+  color: var(--Desaturatedblue);
+}
+.text h3 {
+  font-family: var(--rubik);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--PaleBlue);
+  text-transform: capitalize;
+}
+/* =========time ============ */
+.time {
+  background-color: var(--Darkblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  margin-top: 10px;
+  width: 200px;
+}
+.time p {
+  font-family: var(--rubik);
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--Desaturatedblue);
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 300ms ease-in;
+}
+.time p:hover {
+  color: var(--PaleBlue);
+}
+
+/* ==========end of profile========== */
+
+#work {
+  background-color: var(--Lightredwork);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+}
+#play {
+  background-color: var(--Softblueplay);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+}
+#study {
+  background-color: var(--Lightredstudy);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+}
+#exercise {
+  background-color: var(--Limegreenexercise);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+}
+#social {
+  background-color: var(--Violetsocial);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+}
+#selfcare {
+  background-color: var(--Softorangeselfcare);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 50px;
+
+  margin-left: 150px;
+  margin-top: -10px;
+}
+.info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -20px;
+  background-color: var(--Darkblue);
+  border-radius: 8px;
+}
+
+.title-dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--PaleBlue);
+  font-family: var(--rubik);
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--PaleBlue);
+  font-family: var(--rubik);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main {
+  font-size: 20px;
+}
+.last {
+  font-size: 10px;
+}
+.exercise-icon {
+  margin-top: 0;
+}
+.exercise-info {
+  margin-top: -15px;
+}
+.social-info {
+  margin-top: -40px;
+}
+.time .selected {
+  color: white;
+}

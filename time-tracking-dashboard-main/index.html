@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <section class="grid-container">
+      <div class="grid" id="profile">
+        <div class="profile-info">
+          <img src="./images/image-jeremy.png" alt="" />
+          <article class="text">
+            <p>Report for</p>
+            <h3>jeremy Robson</h3>
+          </article>
+        </div>
+        <div class="time">
+          <p id="daily">daily</p>
+          <p id="weekly">weekly</p>
+          <p id="monthly">monthly</p>
+        </div>
+      </div>
+      <div class="grid" id="work">
+        <img src="./images/icon-work.svg" class="icon" alt="work" />
+        <div class="info">
+          <article class="title-dots">
+            <p class="title">work</p>
+            <span>...</span>
+          </article>
+          <article class="work-data data">
+            <p class="main-worked main">32hrs</p>
+            <p class="last-worked last">last week - 36hrs</p>
+          </article>
+        </div>
+      </div>
+      <div class="grid" id="play">
+        <img src="./images/icon-play.svg" class="icon" alt="work" />
+        <div class="info">
+          <article class="title-dots">
+            <p class="title">play</p>
+            <span>...</span>
+          </article>
+          <article class="work-data data">
+            <p class="main-played main">32hrs</p>
+            <p class="last-played last">last week - 36hrs</p>
+          </article>
+        </div>
+      </div>
+      <div class="grid" id="study">
+        <img src="./images/icon-study.svg" class="icon" alt="work" />
+        <div class="info">
+          <article class="title-dots">
+            <p class="title">study</p>
+            <span>...</span>
+          </article>
+          <article class="study-data data">
+            <p class="main-studied main">32hrs</p>
+            <p class="last-studied last">last week - 36hrs</p>
+          </article>
+        </div>
+      </div>
+      <div class="grid" id="exercise">
+        <img
+          src="./images/icon-exercise.svg"
+          class="icon exercise-icon"
+          alt="work"
+        />
+        <div class="info exercise-info">
+          <article class="title-dots">
+            <p class="title">exercise</p>
+            <span>...</span>
+          </article>
+          <article class="exercise-data data">
+            <p class="main-exercised main">32hrs</p>
+            <p class="last-exercised last">last week - 36hrs</p>
+          </article>
+        </div>
+      </div>
+      <div class="grid" id="social">
+        <img src="./images/icon-social.svg" class="icon" alt="work" />
+        <div class="info social-info">
+          <article class="title-dots">
+            <p class="title">social</p>
+            <span>...</span>
+          </article>
+          <article class="social-data data">
+            <p class="main-social main">32hrs</p>
+            <p class="last-social last">last week - 36hrs</p>
+          </article>
+        </div>
+      </div>
+      <div class="grid" id="selfcare">
+        <img src="./images/icon-self-care.svg" class="icon" alt="work" />
+        <div class="info">
+          <article class="title-dots">
+            <p class="title">selfcare</p>
+            <span>...</span>
+          </article>
+          <article class="study-data data">
+            <p class="main-care main">32hrs</p>
+            <p class="last-care last">last week - 36hrs</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
