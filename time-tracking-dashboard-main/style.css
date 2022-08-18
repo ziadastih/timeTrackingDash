@@ -211,3 +211,22 @@ body {
 .time .selected {
   color: white;
 }
+
+@media (min-width: 750px) {
+  .grid-container {
+    grid-template-columns: repeat(4, auto);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #profile {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 200px;
+  }
+  .profile-info {
+    height: 150px;
+    flex-direction: column;
+  }
+}
